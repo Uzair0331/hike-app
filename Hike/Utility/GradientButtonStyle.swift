@@ -17,16 +17,18 @@ struct GradientButton : ButtonStyle{
             .background(
                 configuration.isPressed ?
                 LinearGradient(
-                    colors:
-                        [.customGrayLight,
-                         .customGrayMedium],
-                    startPoint: .top,
-                    endPoint: .bottom)
+                    colors:[
+                        .customBlueColor,
+                        .customDarkBlueColor
+                    ],
+                        startPoint: .top,
+                        endPoint: .bottom)
                 :
-                    LinearGradient(
-                        colors:
-                            [.customGrayMedium,
-                             .customGrayLight],
+                LinearGradient(
+                     colors:[
+                        .customGrayMedium,
+                        .customGrayLight
+                     ],
                         startPoint: .top,
                         endPoint: .bottom)
             )

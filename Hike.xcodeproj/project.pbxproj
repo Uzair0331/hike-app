@@ -18,6 +18,8 @@
 		6D92512E2C45542900972557 /* GradientButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D92512D2C45542900972557 /* GradientButtonStyle.swift */; };
 		6D9251302C48F39A00972557 /* CustomCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D92512F2C48F39A00972557 /* CustomCircle.swift */; };
 		6D9251322C48F80C00972557 /* MotionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9251312C48F80C00972557 /* MotionAnimationView.swift */; };
+		6D9251352C491BCC00972557 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9251342C491BCC00972557 /* SettingView.swift */; };
+		6D9251372C49507500972557 /* CustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9251362C49507500972557 /* CustomList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		6D92512D2C45542900972557 /* GradientButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButtonStyle.swift; sourceTree = "<group>"; };
 		6D92512F2C48F39A00972557 /* CustomCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCircle.swift; sourceTree = "<group>"; };
 		6D9251312C48F80C00972557 /* MotionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionAnimationView.swift; sourceTree = "<group>"; };
+		6D9251342C491BCC00972557 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		6D9251362C49507500972557 /* CustomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +71,7 @@
 			children = (
 				6D9251262C453EF100972557 /* Utility */,
 				6D9251112C45325200972557 /* HikeApp.swift */,
-				6D9251132C45325200972557 /* ContentView.swift */,
+				6D9251332C491B5500972557 /* Screen */,
 				6D9251152C45325400972557 /* Assets.xcassets */,
 				6D9251172C45325400972557 /* Preview Content */,
 				6D9251232C453BD200972557 /* Component */,
@@ -91,6 +95,7 @@
 				6D92512B2C45495300972557 /* CustomButtonView.swift */,
 				6D92512F2C48F39A00972557 /* CustomCircle.swift */,
 				6D9251312C48F80C00972557 /* MotionAnimationView.swift */,
+				6D9251362C49507500972557 /* CustomList.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -102,6 +107,15 @@
 				6D92512D2C45542900972557 /* GradientButtonStyle.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		6D9251332C491B5500972557 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				6D9251132C45325200972557 /* ContentView.swift */,
+				6D9251342C491BCC00972557 /* SettingView.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,12 +189,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D9251142C45325200972557 /* ContentView.swift in Sources */,
+				6D9251352C491BCC00972557 /* SettingView.swift in Sources */,
 				6D9251122C45325200972557 /* HikeApp.swift in Sources */,
 				6D9251302C48F39A00972557 /* CustomCircle.swift in Sources */,
 				6D9251252C453C2F00972557 /* customBackgroundView.swift in Sources */,
 				6D92512C2C45495300972557 /* CustomButtonView.swift in Sources */,
 				6D92512E2C45542900972557 /* GradientButtonStyle.swift in Sources */,
 				6D9251322C48F80C00972557 /* MotionAnimationView.swift in Sources */,
+				6D9251372C49507500972557 /* CustomList.swift in Sources */,
 				6D92512A2C4540F200972557 /* CardView.swift in Sources */,
 				6D9251282C453F1800972557 /* ColorExtension.swift in Sources */,
 			);

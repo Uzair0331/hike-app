@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct CardView: View {
+    
     @State private var imageNumber : Int = 1
     @State private var randomNumber : Int = 1
-    
+    @State private var isShowingSheet : Bool = false
     func randomImage(){
         repeat{
             randomNumber = Int.random(in: 1...5)
@@ -37,23 +38,34 @@ struct CardView: View {
                         .foregroundStyle(
                         LinearGradient(
                         colors:
-                        [.customGrayLight,
-                        .customGrayMedium],
+                        [.customDarkBlueColor,
+                        .customPurpleColor],
                         startPoint: .top,
                         endPoint: .bottom)
                             )
                         Spacer()
                         Button{
-                            
+                            isShowingSheet.toggle()
                         }label: {
                             CustomButtonView()
                         }
+                        .sheet(isPresented: $isShowingSheet){
+                            SettingView()
+                                .presentationDragIndicator(.visible)
+                                .presentationDetents([.medium,.large])
+                        }
                     }
                     
-                    Text("Fun and enjoyable outdoor activity for freinds and families.")
+                    Text("Fun and enjoyable outdoor activity for freinds and families.....")
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                         .italic()
-                        .foregroundColor(.customGrayMedium)
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors:
+                                    [.customDarkBlueColor,
+                                     .customPurpleColor],
+                                     startPoint: .top,
+                                    endPoint: .bottom))
                 }
                 .padding(.horizontal,30)
                 
@@ -70,7 +82,14 @@ struct CardView: View {
                     Text("Explore More")
                         .font(.title2)
                         .fontWeight(.heavy)
-                        .foregroundStyle(LinearGradient(colors: [.customGreenLight,.customGreenDark], startPoint: .top, endPoint: .bottom ))
+                        .foregroundStyle(
+                            LinearGradient(
+                                colors:
+                                [.customBlueColor,
+                                .customPurpleColor],
+                                startPoint: .top,
+                                endPoint: .bottom )
+                        )
                 }
                 .buttonStyle(GradientButton())
             }

@@ -11,19 +11,20 @@ struct customBackgroundView: View {
     var body: some View {
         ZStack{
             // MARK : - 3. DEPTH
-            Color.customGreenDark
+            Color.customPurpleColor
                 .cornerRadius(40)
                 .offset(y:12)
             // MARK : - 2. LIGHT
-            Color.customGreenLight
+            Color.customBlueColor
                 .cornerRadius(40)
                 .offset(y:3)
                 .opacity(0.85)
             // MARK : - 1. SURFACE
             
-            LinearGradient(colors: [Color.customGreenLight,Color.customGreenMedium], startPoint: .top, endPoint: .bottom)
+            LinearGradient(colors: [Color.customBlueColor,Color.customPurpleColor], startPoint: .top, endPoint: .bottom)
                 .cornerRadius(40)
         }
+        .shadow(color: Color.black.opacity(0.3), radius: 10, x: 0, y: 10)
     }
 }
 
