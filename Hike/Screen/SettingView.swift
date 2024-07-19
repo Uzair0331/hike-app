@@ -29,7 +29,6 @@ struct SettingView: View {
                     
                 }
                 
-                
                 Image(systemName: "laurel.trailing")
                     .font(
                         .system(
@@ -62,14 +61,16 @@ struct SettingView: View {
                     .foregroundColor(.customPurpleColor)
             }
             
-            
             .multilineTextAlignment(.center)
             .padding(.bottom,16)
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
             
+            
             Section(
+                
                 header:
                     Text("ABOUT THE APP"),
+                
                 
                 footer:
                     HStack{
@@ -99,6 +100,26 @@ struct SettingView: View {
                     rowIcon: "swift",
                     rowContent: "Swift",
                     rowTintColor: .orange)
+                
+                CustomList(
+                    rowLabel: "Version",
+                    rowIcon: "gear",
+                    rowContent: "0.1",
+                    rowTintColor: .purple)
+                
+                CustomList(
+                    rowLabel: "Developer",
+                    rowIcon: "ellipsis.curlybraces",
+                    rowContent: "Uzair Shaikh",
+                    rowTintColor: .mint)
+                
+                CustomList(
+                    rowLabel: "Website",
+                    rowIcon: "globe",
+                    rowContent: nil,
+                    rowTintColor: .pink,
+                    rowLinkLabel: "uzairshaikh.netlify",
+                    rowLinkDestination: "https://uzairshaikh.netlify.app/")
             }
         }
         
@@ -111,4 +132,5 @@ struct SettingView: View {
 
 #Preview {
     SettingView()
+        
 }
